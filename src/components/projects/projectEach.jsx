@@ -7,10 +7,10 @@ const ProjectImage = ({project}) => {
     ['weather-first', 'weather-second', 'weather-third']
   return (
     <>
-    <img className='md:h-[22rem] h-36 mt-7' src={`./${projectImg[0]}.png`} alt="" />
-    <img className='md:h-[24rem] h-36 mt-7' src={`./${projectImg[3]}.png`} alt="" />
-    <img className='md:h-[22rem] h-36 mt-7' src={`./${projectImg[1]}.png`} alt="" />
-    <img className='md:h-[22rem] h-36 mt-7' src={`./${projectImg[2]}.png`} alt="" />
+    <img className='md:h-[22rem] h-48 mt-7' src={`./${projectImg[0]}.png`} alt="" />
+    <img className='md:h-[24rem] h-48 mt-7' src={`./${projectImg[3]}.png`} alt="" />
+    <img className='md:h-[22rem] h-48 mt-7' src={`./${projectImg[1]}.png`} alt="" />
+    <img className='md:h-[22rem] h-48 mt-7' src={`./${projectImg[2]}.png`} alt="" />
     </>
   )
 }

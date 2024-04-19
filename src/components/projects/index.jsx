@@ -11,8 +11,8 @@ const Projects = () => {
 
     return (
         <>
-            <div className='absolute w-44 h-32 bg-red-400 top-10 left-64 blur-[180px]'></div>
-            <div className='md:flex grid grid-cols-2 justify-center gap-6 whitespace-nowrap pb-4 text-black md:text-lg text-sm font-medium tracking-wider'>
+            <div className='absolute w-44 h-32 bg-red-400 top-10 md:left-64 blur-[180px]'></div>
+            <div className='flex flex-wrap justify-center gap-6 whitespace-nowrap pb-4 text-black md:text-lg text-sm font-medium tracking-wider'>
                 <p onClick={() => setProject('fitness')} className='px-4 cursor-pointer py-1 bg-white rounded-sm'>Fitness app</p>
                 <p onClick={() => setProject('form')} className='px-4 cursor-pointer py-1 bg-white rounded-sm'>Multi-step Form</p>
                 <p onClick={() => setProject('dribble')} className='px-4 cursor-pointer py-1 bg-white rounded-sm'>Dribble sign-up form</p>

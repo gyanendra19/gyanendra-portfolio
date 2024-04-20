@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import ProjectImage from './projectEach'
+import { RiExternalLinkFill } from '@remixicon/react'
 
 const Projects = () => {
     const [project, setProject] = useState('fitness')
@@ -23,8 +24,8 @@ const Projects = () => {
                    <ProjectImage project = {project} />
                 </div>
                 <div className='flex w-full mt-6 md:mt-0 justify-center gap-8' >
-                    <a href={`${prolectLinks[0]}`} target='_blank' className='text-gray-300 cursor-pointer text-xl tracking-widest'>Github</a>
-                    <a href={`${prolectLinks[1]}`} target='_blank' className='text-gray-300 cursor-pointer text-xl tracking-widest'>Live</a>
+                    <a href={`${prolectLinks[0]}`} target='_blank' className='text-gray-300 flex gap-2 items-center cursor-pointer text-xl tracking-widest'>Github <RiExternalLinkFill size={16} /></a>
+                    <a href={`${prolectLinks[1]}`} target='_blank' className='text-gray-300 items-center flex gap-2 cursor-pointer text-xl tracking-widest'>Live <RiExternalLinkFill size={16} /></a>
                 </div>
             </div>
         </>

@@ -7,7 +7,7 @@ const Tech = () => {
   }
 
   return (
-    <div className='flex md:flex-row flex-col md:gap-32 gap-8 relative md:mt-14 my-6'>
+    <div className='flex md:flex-row flex-col md:gap-32 gap-8 relative md:mt-14 md:mb-28 my-6'>
       <div className='absolute w-40 h-32 bg-red-400 top-10 left-64 blur-[170px]'></div>
       <div className='flex flex-col gap-8 items-center'>
 

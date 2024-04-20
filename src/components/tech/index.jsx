@@ -7,7 +7,7 @@ const Tech = () => {
   }
 
   return (
-    <div className='flex md:flex-row flex-col md:gap-32 gap-8 relative mt-14'>
+    <div className='flex md:flex-row flex-col md:gap-32 gap-8 relative md:mt-14 my-6'>
       <div className='absolute w-40 h-32 bg-red-400 top-10 left-64 blur-[170px]'></div>
       <div className='flex flex-col gap-8 items-center'>
 
@@ -18,7 +18,7 @@ const Tech = () => {
             <div className='absolute block progress-animate bg-blue-500 rounded-md w-[90%] top-0 h-full'></div>
           </div>
         </div>
-
+        
         <div className='flex gap-8 items-center relative w-full'>
           <div className={progressStyle(`before:content-['80%']`, 'md:before:right-7', 'before:right-20')}></div>
           <img className='md:h-14 h-12' src="./css.png" alt="" />

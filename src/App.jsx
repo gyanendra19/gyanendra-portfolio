@@ -3,6 +3,7 @@ import { useState } from "react"
 import Tech from "./components/tech"
 import Stars from "./components/stars"
 import Projects from "./components/projects"
+import About from "./components/about"
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
   const [fallStar, setFallStar] = useState(false)
 
   const navBox = (text, page) => {
-    return <div onClick={() => setWhichPage(page)} className={`px-3 md:w-[145px] w-[110px] py-1.5 whitespace-nowrap flex items-center justify-center cursor-pointer rounded-sm bg-white/20 text-[#2FA5E7] md:text-lg text-sm tracking-wider`}>{text}</div>
+    return <div onClick={() => setWhichPage(page)} className={`px-3 md:w-[145px] w-[110px] py-1.5 whitespace-nowrap flex items-center justify-center cursor-pointer relative z-[2] rounded-sm bg-white/20 text-[#2FA5E7] md:text-lg text-sm tracking-wider`}>{text}</div>
 
   }
 
@@ -22,7 +23,7 @@ function App() {
           <div className="w-[88%] flex md:flex-row gap-6 flex-col mx-auto justify-between md:items-center">
 
             <div className="flex gap-4">
-              <img className={`h-12 rounded-full ${whichPage === 'about' ? 'move-image' : 'rotate-anime'}`} src="./leo.jpg" alt="pic" />
+              <img className={`h-12 rounded-full ${whichPage === 'about' ? 'move-image-phone' : 'rotate-anime'}`} src="./leo.jpg" alt="pic" />
               <div className="flex flex-col text-gray-300">
                 <p className="font-[Oregano] text-lg">GYANENDRA VERMA</p>
                 <p className="tracking-wide">Full stack developer</p>
@@ -39,7 +40,7 @@ function App() {
 
         <section className="py-4 md:pl-20 w-full flex md:flex-row flex-col md:gap-20 gap-10">
           <div className="flex md:flex-col flex-row flex-wrap md:justify-normal justify-center md:mt-20 gap-6 relative">
-            <div className="absolute w-24 h-12 bg-white blur-[70px] left-10 top-20"></div>
+            <div className="absolute w-24 h-12 bg-white blur-[70px] z-[1] left-10 top-20"></div>
             {navBox('ABOUT', 'about')}
             {navBox('TECH STACK', 'tech')}
             {navBox('PROJECTS', 'project')}
@@ -48,7 +49,9 @@ function App() {
 
           <div className="w-full relative">
             {whichPage === 'tech' ? <Tech /> :
-           <Projects /> }
+           whichPage === 'about' ? <About /> :
+           <Projects />
+          }
           </div>
         </section>
       </section>

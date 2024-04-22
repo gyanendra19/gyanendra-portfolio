@@ -5,6 +5,7 @@ import Stars from "./components/stars"
 import Projects from "./components/projects"
 import About from "./components/about"
 import Contact from "./components/contacts"
+import Footer from "./components/footer"
 
 
 function App() {
@@ -58,6 +59,8 @@ function App() {
           }
           </div>
         </section>
+
+        <Footer />
       </section>
     </>
   )
